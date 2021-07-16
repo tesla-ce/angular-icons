@@ -30,7 +30,8 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "preserveSymlinks": true
           },
           "configurations": {
             "production": {
@@ -124,46 +125,6 @@
         }
       }
     },
-    "@tesla-ce/web-plugin": {
-      "projectType": "library",
-      "root": "projects/tesla-ce/web-plugin",
-      "sourceRoot": "projects/tesla-ce/web-plugin/src",
-      "prefix": "lib",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
-          "options": {
-            "tsConfig": "projects/tesla-ce/web-plugin/tsconfig.lib.json",
-            "project": "projects/tesla-ce/web-plugin/ng-package.json"
-          },
-          "configurations": {
-            "production": {
-              "tsConfig": "projects/tesla-ce/web-plugin/tsconfig.lib.prod.json"
-            }
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/tesla-ce/web-plugin/src/test.ts",
-            "tsConfig": "projects/tesla-ce/web-plugin/tsconfig.spec.json",
-            "karmaConfig": "projects/tesla-ce/web-plugin/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/tesla-ce/web-plugin/tsconfig.lib.json",
-              "projects/tesla-ce/web-plugin/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
-      }
-    },
     "@tesla-ce/icons": {
       "projectType": "library",
       "root": "projects/tesla-ce/icons",
@@ -196,46 +157,6 @@
             "tsConfig": [
               "projects/tesla-ce/icons/tsconfig.lib.json",
               "projects/tesla-ce/icons/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
-      }
-    },
-    "@tesla-ce/sensors": {
-      "projectType": "library",
-      "root": "projects/tesla-ce/sensors",
-      "sourceRoot": "projects/tesla-ce/sensors/src",
-      "prefix": "lib",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
-          "options": {
-            "tsConfig": "projects/tesla-ce/sensors/tsconfig.lib.json",
-            "project": "projects/tesla-ce/sensors/ng-package.json"
-          },
-          "configurations": {
-            "production": {
-              "tsConfig": "projects/tesla-ce/sensors/tsconfig.lib.prod.json"
-            }
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/tesla-ce/sensors/src/test.ts",
-            "tsConfig": "projects/tesla-ce/sensors/tsconfig.spec.json",
-            "karmaConfig": "projects/tesla-ce/sensors/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/tesla-ce/sensors/tsconfig.lib.json",
-              "projects/tesla-ce/sensors/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"

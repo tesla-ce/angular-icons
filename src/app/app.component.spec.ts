@@ -1,22 +1,22 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TeslaIconsComponent } from './tesla.icons.component';
+import { AppComponent } from './app.component';
 import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 
 describe('IconsComponent', () => {
-  let component: TeslaIconsComponent;
-  let fixture: ComponentFixture<TeslaIconsComponent>;
+  let component: AppComponent;
+  let fixture: ComponentFixture<AppComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TeslaIconsComponent ],
+      declarations: [ AppComponent ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TeslaIconsComponent);
+    fixture = TestBed.createComponent(AppComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

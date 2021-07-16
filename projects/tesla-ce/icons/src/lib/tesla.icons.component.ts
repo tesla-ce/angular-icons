@@ -102,7 +102,6 @@ export class TeslaIconsComponent implements OnChanges, OnInit{
         console.error('Status [' + this.status + '] is invalid');
         break;
     }
-    console.log(this.fill);
 
     if (this.fill === 'full') {
       aux += ' status_full';

@@ -16,17 +16,8 @@
       "dom"
     ],
     "paths": {
-      "@tesla-ce/web-plugin": [
-        "dist/tesla-ce/web-plugin/tesla-ce-web-plugin",
-        "dist/tesla-ce/web-plugin"
-      ],
       "@tesla-ce/icons": [
-        "dist/tesla-ce/icons/tesla-ce-icons",
-        "dist/tesla-ce/icons"
-      ],
-      "@tesla-ce/sensors": [
-        "dist/tesla-ce/sensors/tesla-ce-sensors",
-        "dist/tesla-ce/sensors"
+        "projects/tesla-ce/icons"
       ]
     }
   },

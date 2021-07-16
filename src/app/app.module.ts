@@ -1,12 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
-import {NgModule, Injector, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
+import {NgModule, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import { APP_BASE_HREF } from '@angular/common';
 import { TeslaIconsModule } from '../../projects/tesla-ce/icons/src/lib/tesla.icons.module';
 import { HttpClientModule} from '@angular/common/http';
-import {AppComponent} from "./app.component";
-import {createCustomElement} from "@angular/elements";
-import {WebPluginComponent} from "@tesla-ce/web-plugin";
-import {TeslaIconsComponent} from "../../projects/tesla-ce/icons/src/lib/tesla.icons.component";
+import { AppComponent } from './app.component';
 
 export function appBaseHRef() {
   const baseUrl = 'http://localhost:4200/';

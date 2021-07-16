@@ -27,7 +27,6 @@
     "@ngx-pwa/local-storage": "^9.0.3",
     "@ngx-translate/core": "^12.1.2",
     "@ngx-translate/http-loader": "^4.0.0",
-    "@tesla-ce/web-plugin": "0.0.12",
     "angular-svg-icon": "^9.2.0",
     "document-register-element": "^1.14.10",
     "moment": "^2.29.1",

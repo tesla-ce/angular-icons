@@ -54,7 +54,6 @@ jobs:
           env_vars: OS
           files: ./coverage/tesla-ce/icons/index.html
       - name: Fossa update license analysis
-        continue-on-error: true
         uses: fossa-contrib/fossa-action@v1
         continue-on-error: true
         with:
@@ -84,9 +83,8 @@ jobs:
           echo ::set-output name=version::$(sed -nE 's/^\s*"version": "(.*?)",$/\1/p' projects/tesla-ce/icons/package.json)
           echo ::set-output name=tag::${GITHUB_REF#refs/*/}
       - name: Build and publish
-      - run: cd projects/tesla-ce/icons/
-      - run: ng build @tesla-ce/icons --prod
-      - run: cd ../../../dist/tesla-ce/icons/
-      - run: npm publish
-
-
+        run: |
+          cd projects/tesla-ce/icons/
+          ng build @tesla-ce/icons --prod
+          cd ../../../dist/tesla-ce/icons/
+          npm publish

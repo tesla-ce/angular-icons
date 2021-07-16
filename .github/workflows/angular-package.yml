@@ -41,7 +41,7 @@ jobs:
         with:
           node-version: '14'
       - run: npm install
-      - run: ng test --no-watch --code-coverage
+      - run: npm run ng test --no-watch --code-coverage
       - name: "Upload coverage to Codecov"
         uses: codecov/codecov-action@v1.5.0
         if: matrix.operating-system == 'ubuntu-latest'
@@ -84,7 +84,8 @@ jobs:
           echo ::set-output name=tag::${GITHUB_REF#refs/*/}
       - name: Build and publish
         run: |
+          npm install
           cd projects/tesla-ce/icons/
-          ng build @tesla-ce/icons --prod
+          npm run ng build @tesla-ce/icons --prod
           cd ../../../dist/tesla-ce/icons/
           npm publish

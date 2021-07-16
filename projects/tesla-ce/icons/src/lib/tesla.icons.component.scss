@@ -1,0 +1,274 @@
+.tesla-icon {
+  width: 20px;
+  height: 20px;
+  fill: #e0e0e0;
+}
+
+.tesla-primary-color {
+  fill: #5290e9;
+}
+
+.tesla-secondary-color {
+  fill: #97bcf2;
+}
+
+.tesla-tertiary-color {
+  fill: #ffffff;
+}
+
+.tesla-primary-stroke {
+  stroke: #5290e9;
+}
+
+.tesla-secondary-stroke {
+  stroke: #97bcf2;
+}
+
+.tesla-tertiary-stroke {
+  stroke: #ffffff;
+}
+
+.tesla-status-success {
+  fill: #25a148;
+}
+
+.tesla-status-warning {
+  fill: #ff832b;
+}
+
+.tesla-status-error {
+  fill: #da1f28;
+}
+
+.tesla_status_disabled,
+.tesla-status-show-disabled .tesla-primary-color,
+.tesla-status-show-disabled .tesla-secondary-color,
+.tesla-status-show-disabled .tesla-tertiary-color {
+  fill: #dcdcdc !important;
+}
+
+.tesla-status-show-disabled .tesla-primary-stroke,
+.tesla-status-show-disabled .tesla-secondary-stroke,
+.tesla-status-show-disabled .tesla-tertiary-stroke {
+  stroke: #dcdcdc !important;
+}
+.tesla-status-show-disabled [class^="common-menu_logo"] {
+  fill: #dcdcdc !important;
+}
+
+.tesla-status {
+  display: none;
+}
+
+.tesla-status-show-success .tesla_status_success,
+.tesla-status-show-error .tesla_status_error,
+.tesla-status-show-warning .tesla_status_warning,
+.tesla-status-show-info .tesla_status_info,
+.tesla-status-show-disabled .tesla_status_disabled {
+  display: block !important;
+}
+
+.status_full.tesla-status-show-error{
+  .tesla-primary-color {
+    fill: #da1f28 !important;
+  }
+
+  .tesla-secondary-color {
+    fill: #e9797e;
+  }
+
+  .tesla-tertiary-color {
+    fill: #ffffff;
+  }
+
+  .tesla-primary-stroke {
+    stroke: #da1f28;
+  }
+
+  .tesla-secondary-stroke {
+    stroke: #e9797e;
+  }
+
+  .tesla-tertiary-stroke {
+    stroke: #ffffff;
+  }
+}
+
+.status_full.tesla-status-show-success{
+  .tesla-primary-color {
+    fill: #25a148;
+  }
+
+  .tesla-secondary-color {
+    fill: #7cc791;
+  }
+
+  .tesla-tertiary-color {
+    fill: #ffffff;
+  }
+
+  .tesla-primary-stroke {
+    stroke: #25a148;
+  }
+
+  .tesla-secondary-stroke {
+    stroke: #7cc791;
+  }
+
+  .tesla-tertiary-stroke {
+    stroke: #ffffff;
+  }
+}
+
+.status_full.tesla-status-show-warning{
+  .tesla-primary-color {
+    fill: #ff832b;
+  }
+
+  .tesla-secondary-color {
+    fill: #ffb580;
+  }
+
+  .tesla-tertiary-color {
+    fill: #ffffff;
+  }
+
+  .tesla-primary-stroke {
+    stroke: #ff832b;
+  }
+
+  .tesla-secondary-stroke {
+    stroke: #ffb580;
+  }
+
+  .tesla-tertiary-stroke {
+    stroke: #ffffff;
+  }
+}
+
+nb-icon{
+  &[status=error] {
+    .tesla-status-show-error,
+    .tesla_status_error {
+      display: block !important;
+    }
+
+    &[data-fill=full] {
+      .tesla-primary-color {
+        fill: #da1f28;
+      }
+
+      .tesla-secondary-color {
+        fill: #e9797e;
+      }
+
+      .tesla-tertiary-color {
+        fill: #ffffff;
+      }
+
+      .tesla-primary-stroke {
+        stroke: #da1f28;
+      }
+
+      .tesla-secondary-stroke {
+        stroke: #e9797e;
+      }
+
+      .tesla-tertiary-stroke {
+        stroke: #ffffff;
+      }
+    }
+  }
+
+  &[status=warning] {
+    .tesla-status-show-warning,
+    .tesla_status_warning {
+      display: block !important;
+    }
+
+    &[data-fill=full] {
+      .tesla-primary-color {
+        fill: #ff832b;
+      }
+
+      .tesla-secondary-color {
+        fill: #ffb580;
+      }
+
+      .tesla-tertiary-color {
+        fill: #ffffff;
+      }
+
+      .tesla-primary-stroke {
+        stroke: #ff832b;
+      }
+
+      .tesla-secondary-stroke {
+        stroke: #ffb580;
+      }
+
+      .tesla-tertiary-stroke {
+        stroke: #ffffff;
+      }
+    }
+  }
+
+  &[status=success] {
+    .tesla-status-show-success,
+    .tesla_status_success {
+      display: block !important;
+    }
+
+    &[data-fill=full] {
+      .tesla-primary-color {
+        fill: #25a148;
+      }
+
+      .tesla-secondary-color {
+        fill: #7cc791;
+      }
+
+      .tesla-tertiary-color {
+        fill: #ffffff;
+      }
+
+      .tesla-primary-stroke {
+        stroke: #25a148;
+      }
+
+      .tesla-secondary-stroke {
+        stroke: #7cc791;
+      }
+
+      .tesla-tertiary-stroke {
+        stroke: #ffffff;
+      }
+    }
+  }
+
+  &[status=info] {
+    .tesla-status-show-info,
+    .tesla_status_info {
+      display: block !important;
+    }
+  }
+
+  &[status=disabled] {
+    .tesla-status-show-disabled,
+    .tesla_status_disabled {
+      display: block !important;
+    }
+
+    .tesla-primary-color,
+    .tesla-secondary-color,
+    .tesla-tertiary-color {
+      fill: #dcdcdc !important;
+    }
+
+    .tesla-primary-stroke,
+    .tesla-secondary-stroke,
+    .tesla-tertiary-stroke {
+      stroke: #dcdcdc !important;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "@tesla-ce/icons",
+  "version": "0.0.35",
+  "peerDependencies": {
+    "@nebular/theme": "^5.1.0",
+    "@angular/compiler-cli": "9.1.13",
+    "@angular/compiler": "9.1.13",
+    "@angular/common": "^9.1.10",
+    "@angular/core": "^9.1.10",
+    "@angular/router": "^9.1.10",
+    "@angular/forms": "^9.1.10",
+    "@angular/platform-browser": "^9.1.10",
+    "angular-svg-icon": "^9.2.0",
+    "@angular/cdk": "^9.2.4",
+    "@angular/animations": "^9.1.10",
+    "rxjs": "6.5.5",
+    "zone.js": "~0.10.3"
+  },
+  "dependencies": {
+    "@nebular/theme": "^5.1.0",
+    "@angular/compiler-cli": "9.1.13",
+    "@angular/compiler": "9.1.13",
+    "tslib": "^1.13.0",
+    "@angular/common": "^9.1.10",
+    "@angular/core": "^9.1.10",
+    "@angular/router": "^9.1.10",
+    "@angular/forms": "^9.1.10",
+    "@angular/platform-browser": "^9.1.10",
+    "angular-svg-icon": "^9.2.0",
+    "@angular/cdk": "^9.2.4",
+    "@angular/animations": "^9.1.10",
+    "rxjs": "6.5.5",
+    "zone.js": "~0.10.3"
+  },
+  "scripts": {
+    "postinstall": "ngcc"
+  }
+}

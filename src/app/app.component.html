@@ -1,0 +1,25 @@
+<table>
+  <thead>
+  <th>Name</th>
+  <th>Icon</th>
+  <th>Status success</th>
+  <th>Status error</th>
+  <th>Status warning</th>
+  <th>Status info</th>
+  <th>Status disabled</th>
+  </thead>
+  <tbody>
+  <tr *ngFor="let icon of icons">
+    <td>
+      {{ icon }}
+    </td>
+    <td *ngFor="let st of status">
+      <lib-tesla-icons icon="{{ icon }}" status="{{st}}" width="100" height="100" marginLeft="0" marginRight="0" marginTop="10" fill="none"></lib-tesla-icons>
+      <lib-tesla-icons icon="{{ icon }}" status="{{st}}" width="100" height="100" marginLeft="0" marginRight="0" marginTop="10" fill="full"></lib-tesla-icons>
+    </td>
+  </tr>
+
+  </tbody>
+</table>
+
+

@@ -1,6 +1,6 @@
 {
   "name": "@tesla-ce/icons",
-  "version": "0.0.35",
+  "version": "0.0.36",
   "peerDependencies": {
     "@nebular/theme": "^5.1.0",
     "@angular/compiler-cli": "9.1.13",

@@ -87,7 +87,6 @@ jobs:
       - name: Build and publish
         run: |
           npm install
-          cd projects/tesla-ce/icons/
           npm run buildiconsprod
-          cd ../../../dist/tesla-ce/icons/
+          cd dist/tesla-ce/icons/
           npm publish

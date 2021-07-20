@@ -7,6 +7,7 @@
     "build-web-component": "./build.sh",
     "build": "ng build --prod",
     "test": "ng test",
+    "testgithub": "ng test --watch=false --browsers=ChromeHeadless --code-coverage",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },

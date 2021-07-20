@@ -8,6 +8,7 @@
     "build": "ng build --prod",
     "test": "ng test",
     "testgithub": "ng test --watch=false --browsers=ChromeHeadless --code-coverage",
+    "buildiconsprod": "ng build @tesla-ce/icons --prod",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },

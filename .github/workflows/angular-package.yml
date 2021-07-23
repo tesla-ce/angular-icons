@@ -33,6 +33,10 @@ jobs:
           actual: ${{ steps.vars.outputs.version }}
           comparison: exact
   test:
+    strategy:
+      fail-fast: false
+      matrix:
+        operating-system: [ ubuntu-latest ] #, windows-latest, macos-latest ]
     needs: check
     runs-on: ubuntu-latest
     steps:

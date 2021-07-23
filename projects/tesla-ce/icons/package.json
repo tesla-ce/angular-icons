@@ -1,6 +1,12 @@
 {
   "name": "@tesla-ce/icons",
   "version": "0.0.36",
+  "homepage": "https://www.tesla-ce.eu",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/tesla-ce/angular-icons"
+  },
+  "license": "AGPL-3.0-or-later",
   "peerDependencies": {
     "@nebular/theme": "^5.1.0",
     "@angular/compiler-cli": "9.1.13",

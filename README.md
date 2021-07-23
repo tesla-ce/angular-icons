@@ -1,3 +1,11 @@
+[![codecov](https://codecov.io/gh/tesla-ce/angular-icons/branch/main/graph/badge.svg?token=lSrcEgVFMz)](https://codecov.io/gh/tesla-ce/angular-icons)
+[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
+[![FOSSA Status](https://app.fossa.com/api/projects/custom%2B26246%2Fgithub.com%2Ftesla-ce%2Fangular-icons.svg?type=shield)](https://app.fossa.com/projects/custom%2B26246%2Fgithub.com%2Ftesla-ce%2Fangular-icons?ref=badge_shield)
+
+[![Quality gate](https://sonar.sunai.uoc.edu/api/project_badges/quality_gate?project=angular-icons)](https://sonar.sunai.uoc.edu/dashboard?id=angular-icons)
+
+[![NPM](https://nodei.co/npm/@tesla-ce/icons.png)](https://npmjs.org/package/@tesla-ce/icons)
+
 # Angular package with TeSLA CE Icons
 
 | :warning: This repository is **under construction**. Final release of TeSLA Community Edition source code is expected by the **end of 2021** |
@@ -20,3 +28,5 @@ Credits: Include a section for credits in order to highlight and link to the aut
 
 ## License
 This project is licensed under [AGPL v3 licence](http://www.gnu.org/licenses/agpl-3.0).
+
+[![FOSSA Status](https://app.fossa.com/api/projects/custom%2B26246%2Fgithub.com%2Ftesla-ce%2Fangular-icons.svg?type=large)](https://app.fossa.com/projects/custom%2B26246%2Fgithub.com%2Ftesla-ce%2Fangular-icons?ref=badge_large)

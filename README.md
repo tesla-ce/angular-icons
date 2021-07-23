@@ -1,10 +1,9 @@
+[![npm version](https://badge.fury.io/js/%40tesla-ce%2Ficons.svg)](https://badge.fury.io/js/%40tesla-ce%2Ficons)
 [![codecov](https://codecov.io/gh/tesla-ce/angular-icons/branch/main/graph/badge.svg?token=lSrcEgVFMz)](https://codecov.io/gh/tesla-ce/angular-icons)
 [![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
 [![FOSSA Status](https://app.fossa.com/api/projects/custom%2B26246%2Fgithub.com%2Ftesla-ce%2Fangular-icons.svg?type=shield)](https://app.fossa.com/projects/custom%2B26246%2Fgithub.com%2Ftesla-ce%2Fangular-icons?ref=badge_shield)
 
 [![Quality gate](https://sonar.sunai.uoc.edu/api/project_badges/quality_gate?project=angular-icons)](https://sonar.sunai.uoc.edu/dashboard?id=angular-icons)
-
-[![NPM](https://nodei.co/npm/@tesla-ce/icons.png)](https://npmjs.org/package/@tesla-ce/icons)
 
 # Angular package with TeSLA CE Icons
 

@@ -16,7 +16,7 @@ export class TeslaIconsComponent implements OnChanges, OnInit{
     this.baseURL = this.teslaIconService.getBaseURL();
   }
 
-  @Input() icon: string;
+  @Input() icon: string = '';
   @Input() status?: string;
   @Input() width?: string;
   @Input() height?: string;
@@ -25,10 +25,10 @@ export class TeslaIconsComponent implements OnChanges, OnInit{
   @Input() marginTop?: string;
   @Input() fill?: string;
 
-  public iconType: string;
-  public teslaIconSrc: string;
-  public iconStatus: string;
-  public iconReady: boolean;
+  public iconType: string = '';
+  public teslaIconSrc: string = '';
+  public iconStatus: string = '';
+  public iconReady: boolean = false;
 
   getIcon(path: string, extension: string = 'png') {
     if (this.baseURL == null) {
@@ -68,7 +68,7 @@ export class TeslaIconsComponent implements OnChanges, OnInit{
   }
 
   private updateStatus() {
-    let aux;
+    let aux = '';
     if (this.status === undefined) {
       return;
     }

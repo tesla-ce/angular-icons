@@ -8,23 +8,8 @@
       "@nebular/theme": "default"
     }
   },
-  "assets": [
-    "./src/assets",
-    "./src/lib/tesla.icons.component.scss"
-  ],
-  "whitelistedNonPeerDependencies": [
-    "@angular/compiler-cli",
-    "@angular/compiler",
-    "@angular/common",
-    "@angular/core",
-    "@angular/router",
-    "@angular/forms",
-    "@angular/platform-browser",
-    "angular-svg-icon",
-    "@angular/cdk",
-    "@angular/animations",
-    "rxjs",
-    "zone.js",
-    "@nebular/theme"
+  "allowedNonPeerDependencies": [
+    "@nebular/theme",
+    "angular-svg-icon"
   ]
 }

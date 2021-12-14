@@ -1,9 +1,10 @@
+import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {NgModule, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
-import { APP_BASE_HREF } from '@angular/common';
-import { TeslaIconsModule } from '../../projects/tesla-ce/icons/src/lib/tesla.icons.module';
-import { HttpClientModule} from '@angular/common/http';
+
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {TeslaIconsModule} from "../../projects/tesla-ce/icons/src/lib/tesla.icons.module";
+import {APP_BASE_HREF} from "@angular/common";
 
 export function appBaseHRef() {
   const baseUrl = 'http://localhost:4200/';
@@ -12,10 +13,12 @@ export function appBaseHRef() {
 }
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent
+  ],
   imports: [
     BrowserModule,
-    HttpClientModule,
+    AppRoutingModule,
     TeslaIconsModule.forRoot({
       provide: APP_BASE_HREF,
       useFactory: appBaseHRef,
@@ -29,11 +32,9 @@ export function appBaseHRef() {
       deps: []
     }
   ],
-  entryComponents: [],
   bootstrap: [AppComponent],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
   ]
-
 })
-export class AppModule {}
+export class AppModule { }

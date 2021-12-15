@@ -1,6 +1,6 @@
 {
   "name": "@tesla-ce/icons",
-  "version": "0.0.39",
+  "version": "0.0.40",
   "peerDependencies": {
     "@angular/common": "^12.1.0",
     "@angular/core": "^12.1.0",

@@ -11,5 +11,9 @@
   "allowedNonPeerDependencies": [
     "@nebular/theme",
     "angular-svg-icon"
+  ],
+  "assets": [
+    "./src/assets",
+    "./src/lib/tesla.icons.component.scss"
   ]
 }
